@@ -1,0 +1,158 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*---- Cabeçalho ----*/
+#banner_box {
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+#banner {
+    max-width: 90%;
+    width: 1450px;
+    object-fit: cover;
+    height: 550px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    transition: 0.5s;
+}
+
+#banner:hover {
+    border: 3px solid #000000;
+    transition: 0.5s;
+}
+
+/*---- Dark-Mode no Banner ----*/
+.darkMode #banner:hover {
+    border: 3px solid #fff;
+    transition: 0.5s;
+}
+/*---- Dark-Mode no Banner ----*/
+
+/*---- Cabeçalho ----*/
+
+/*---- Post ----*/
+main {
+    margin-bottom: 30px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0px 50px;
+}
+
+#page_title {
+    margin-top: 40px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post_title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.post_text {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0248fb;
+}
+/*---- Post ----*/
+
+/*---- Newsletter ----*/
+.newsletter_section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px 10px;
+    gap: 5px;
+}
+
+#newsletter_title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#newsletter_paragraph {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+#form {
+    display: flex;
+    gap: 10px;
+}
+
+#newsletter_input {
+    width: 250px;
+    height: 35px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0.5px solid #000;
+}
+
+#newsletter_button {
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: rgb(170, 170, 170);
+    border: 1px solid #000;
+    cursor: pointer;
+}
+/*---- Newsletter ----*/
+
+/*---- Dark Mode Button ----*/
+#footer {
+    display: flex;
+    justify-content: center;
+}
+
+#dark-mode {
+    font-size: 20px;
+    margin: 5px 20px;
+    border-radius: 4px;
+    width: 50%;
+    height: 35px;
+    border: 1px solid;
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#dark-mode:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+/*---- Dark Mode Button ----*/
+
+/*---- Dark Mode Functions----*/
+.darkMode {
+    background-color: rgb(33, 33, 33);
+    color: #FFF;
+}
+
+.darkMode #newsletter_button {
+    font-weight: 600;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 51);
+}
+/*---- Dark Mode ----*/
